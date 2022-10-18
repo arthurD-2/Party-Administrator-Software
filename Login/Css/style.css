@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans' , sans-serif;
+}
+body *{
+    box-sizing: border-box;
+}
+.LeftLogin{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+}
+.LeftLogin h1{
+color: #f1f1f1;
+font-size: 3vw;
+}
+.Left-Image{
+width: 35vw;
+height: 70vh;
+}
+.RightLogin{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+}
+
+.MainLogin{ 
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #020202 ;
+    width: 100vw;
+    height: 100vh;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+
+}
+a:visited{
+    color: black;
+}
+.CardLogin{
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #fc5333;
+    background-color: #f1f1f1;
+    padding: 50px 55px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px black;
+}
+.CardLogin h1{
+    margin: 8px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+input{
+    width: 70%;
+    padding: 20px 60px;
+    outline: none;
+}
+button{
+    letter-spacing: 1px;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 15px;
+    width: 100%;
+    padding: 15px;
+    background-color: #fc5333;
+    color: white;
+    margin-bottom: 15px;
+}
+button:hover{
+    background-color: #fb6041;
+}
+
+@media ( max-width: 950px){
+   
+    .Cardlogin {
+   width: 85%;
+ }
+}
+
+@media ( max-width: 600px){
+ 
+    .MainLogin{
+   flex-direction: column;
+   width: 100%;
+ }
+
+ .LeftLogin > h1{
+  display: none;
+ }
+ 
+
+.LeftLogin{
+    width: 100%;
+    height: auto;
+}
+.RightLogin{
+    width: 100%;
+    height: auto;
+}
+.Left-Image{
+    width: 50vw;
+    height: 20vh;
+}
+.CardLogin{
+    box-sizing: border-box;
+    width: 60%;
+    height: auto;
+    margin: 15px;
+    
+}
+}
+

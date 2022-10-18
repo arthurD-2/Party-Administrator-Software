@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bebas Neue", cursive;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.container {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.topBar {
+  display: flex;
+  justify-content: center;
+  min-width: 100vw;
+  height: 10%;
+  border-top: 5px solid aquamarine;
+}
+#logo {
+  width: 10vw;
+  position: relative;
+  left: 45%;
+}
+.ul-box {
+  display: inline;
+  margin-left: 90%;
+}
+
+a:link {
+  list-style: none;
+  color: black;
+}
+a:link,
+a:visited {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+li {
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  list-style: none;
+  padding-left: 25px;
+  display: inline;
+  margin: 0 0 0 15px;
+}
+.title {
+  padding: 25px;
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+}
+.main {
+  box-sizing: border-box;
+  margin-left: 35%;
+  margin-right: 35%;
+  display: inline-block;
+}
+h4 {
+  padding: 0;
+  margin: 15px;
+  font-size: 30px;
+  text-align: center;
+}
+input {
+  flex-direction: row;
+  display: flex;
+  padding: 8%;
+  margin-top: 1rem;
+  width: 25rem;
+}
+button {
+  transform: translate(-1%);
+  margin-top: 2rem;
+  padding: 8%;
+  width: 25rem;
+  height: 5rem;
+  background: rgb(12, 8, 80);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 8, 80, 1) 35%,
+    rgba(22, 169, 208, 1) 55%,
+    rgba(0, 255, 239, 0.9755252442773985) 100%
+  );
+}
+input::placeholder{
+  text-align: center;
+}
+button::placeholder{
+  text-align: center;
+}
+#resultado {
+  font-size: 35px;
+  text-align: center;
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+
+@media screen and (max-width: 480px) {
+  #logo {
+    display: none;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+  }
+  h1{
+   position: relative;
+   right: -25%;
+  }
+  h4{
+    position: relative;
+    right: -25%;
+   }
+  .topBar{
+    display: none;
+  }
+  input {
+    width: 20rem;
+    position: relative;
+    right: -10%;
+  }
+  button{
+    width: 20rem;
+    position: relative;
+    right: -10%;
+  }
+
+}
+  
